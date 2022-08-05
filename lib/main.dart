@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mulheres_tecnologia/pages/login.dart';
 import 'package:mulheres_tecnologia/pages/home.dart';
 
 void main() {
@@ -15,7 +16,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.purple,
       ),
-      home: const HomePage(),
+      initialRoute: '/home',
+      routes: {
+        '/' : (_) => const LoginPage(),
+        '/home' : (_) => const HomePage(),
+      },
     );
   }
 }
