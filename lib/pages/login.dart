@@ -66,7 +66,7 @@ class _LoginPageState extends State<LoginPage>{
                                 borderRadius: BorderRadius.circular(80.0),
                                     ),
                                   ),
-                                  backgroundColor: MaterialStateProperty.all<Color>(Color.fromARGB(255, 150, 121, 36))
+                                  backgroundColor: MaterialStateProperty.all<Color>(const Color.fromARGB(255, 150, 121, 36))
                                   )
                             ),
                           ),

@@ -24,8 +24,8 @@ class _HomePageState extends State<HomePage>{
                       padding: const EdgeInsets.all(20.0),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          const Text(
+                        children: const [
+                          Text(
                             'XXXXXX',
                             style: TextStyle(
                               color: Colors.white,
@@ -41,23 +41,145 @@ class _HomePageState extends State<HomePage>{
                         ],
                       ),
                       ),
-                      Container(
-                        child: Row(
-                          children: [
-                            Image.asset("grace_hopper.jpg",
-                            width: 300.0,
-                            height: 300.0,
+                      Padding(
+                        padding: const EdgeInsets.only(top: 70.0, left: 30.0, right: 30.0, bottom: 20.0),
+                        child: Card(
+                          shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20.0),
+                                  side: const BorderSide(color: Color.fromARGB(255, 109, 83, 121))),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.rectangle,
+                                gradient: const LinearGradient(
+                                  begin: Alignment.centerLeft,
+                                  end: Alignment.centerRight,
+                                  stops: [0.0, 1.0],
+                                  colors: [
+                                    (Color.fromARGB(255, 109, 83, 121)),
+                                    Color.fromARGB(255, 109, 83, 121)
+                                  ],
+                                ),
+                                borderRadius: BorderRadius.circular(20.0)
+                                ),
+                          child: Padding(
+                            padding: const EdgeInsets.all(10.0),
+                            child: Row(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(20.0),
+                                    child: SizedBox.fromSize(
+                                      size: const Size.fromRadius(48),
+                                      child: Image.asset("assets/ada_lovelace_photo.jpeg",
+                                        fit: BoxFit.cover
+                                    )
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 20.0),
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      const Text('oooo', style: TextStyle(color: Colors.white, fontSize: 20.0),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.only(top: 15.0),
+                                        child: Row(
+                                        children: const [
+                                          Icon(Icons.access_time),
+                                          Text('  5 min'),
+                                          SizedBox(
+                                            width: 80.0,
+                                          ),
+                                          Icon(Icons.favorite_border_outlined, )
+                                        ],
+                                        ),
+                                      ),
+                                    ]
+                                  ),
+                                )
+                                
+                              ],
                             ),
-                            Text('oooo'),
-                          ],
+                            ),
                         ),
                       ),
-                  ],
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 230.0, left: 30.0, right: 30.0, bottom: 20.0),
+                        child: Card(
+                          shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20.0),
+                                  side: const BorderSide(color: Color.fromARGB(255, 109, 83, 121))),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.rectangle,
+                                gradient: const LinearGradient(
+                                  begin: Alignment.centerLeft,
+                                  end: Alignment.centerRight,
+                                  stops: [0.0, 1.0],
+                                  colors: [
+                                    (Color.fromARGB(255, 109, 83, 121)),
+                                    Color.fromARGB(255, 109, 83, 121)
+                                  ],
+                                ),
+                                borderRadius: BorderRadius.circular(20.0)
+                                ),
+                          child: Padding(
+                            padding: const EdgeInsets.all(10.0),
+                            child: Row(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(20.0),
+                                    child: SizedBox.fromSize(
+                                      size: const Size.fromRadius(48),
+                                      child: Image.asset("assets/grace_hopper.jpg",
+                                        fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 20.0),
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      const Text('oooo', style: TextStyle(color: Colors.white, fontSize: 20.0),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.only(top: 15.0),
+                                        child: Row(
+                                        children: const [
+                                          Icon(Icons.access_time),
+                                          Text('  5 min'),
+                                          SizedBox(
+                                            width: 80.0,
+                                          ),
+                                          Icon(Icons.favorite_border_outlined, )
+                                        ],
+                                        ),
+                                      ),
+                                    ]
+                                  ),
+                                )
+                              ]
+                                ),
+                          )
+                              
+                            ),
+                            ),
+                        ),
+                  ]
+                          ),
+              ]
+                        ),
                 )
-              ],
             ),
           ),
-        )),
-    );
+        );
   }
 }
