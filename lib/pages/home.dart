@@ -47,6 +47,8 @@ class _HomePageState extends State<HomePage>{
                           shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20.0),
                                   side: const BorderSide(color:Color.fromARGB(255, 250, 249, 250))),
+                                  elevation: 5,
+                                  margin: const EdgeInsets.all(5),
                               child: Container(
                                 decoration: BoxDecoration(
                                   shape: BoxShape.rectangle,
@@ -113,6 +115,8 @@ class _HomePageState extends State<HomePage>{
                           shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20.0),
                                   side: const BorderSide(color: Color.fromARGB(255, 250, 249, 250))),
+                                  elevation: 5,
+                                  margin: const EdgeInsets.all(5),
                               child: Container(
                                 decoration: BoxDecoration(
                                   shape: BoxShape.rectangle,
@@ -179,6 +183,8 @@ class _HomePageState extends State<HomePage>{
                           shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20.0),
                                   side: const BorderSide(color:Color.fromARGB(255, 250, 249, 250))),
+                                  elevation: 5,
+                                  margin: const EdgeInsets.all(5),
                               child: Container(
                                 decoration: BoxDecoration(
                                   shape: BoxShape.rectangle,
@@ -245,6 +251,8 @@ class _HomePageState extends State<HomePage>{
                           shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20.0),
                                   side: const BorderSide(color:Color.fromARGB(255, 250, 249, 250))),
+                                  elevation: 5,
+                                  margin: const EdgeInsets.all(5),
                               child: Container(
                                 decoration: BoxDecoration(
                                   shape: BoxShape.rectangle,
@@ -311,6 +319,8 @@ class _HomePageState extends State<HomePage>{
                           shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20.0),
                                   side: const BorderSide(color:Color.fromARGB(255, 250, 249, 250))),
+                                  elevation: 5,
+                                  margin: const EdgeInsets.all(5),
                               child: Container(
                                 decoration: BoxDecoration(
                                   shape: BoxShape.rectangle,
