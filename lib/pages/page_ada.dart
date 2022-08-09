@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mulheres_tecnologia/pages/home.dart';
 
 class AdaPage extends StatefulWidget{
   const AdaPage({Key? key}) : super(key: key);
@@ -11,7 +12,7 @@ class _AdaPageState extends State<AdaPage>{
   @override
   Widget build(BuildContext context){
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 250, 250, 250),
+      backgroundColor: const Color.fromARGB(255, 250, 250, 250),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Center(
@@ -22,6 +23,10 @@ class _AdaPageState extends State<AdaPage>{
                   children: <Widget>[
                     Padding(
                       padding: const EdgeInsets.all(20.0),
+                      child: GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).push(MaterialPageRoute(builder: (context)=> const HomePage(),),);
+                          },
                       child: Column(
                         children: [
                           Row(
@@ -64,6 +69,7 @@ class _AdaPageState extends State<AdaPage>{
                         ],
                       ),
                     ),
+                    )
                   ]
                 ),
               ]
