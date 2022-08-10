@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:mulheres_tecnologia/pages/page_ada.dart';
+import 'package:mulheres_tecnologia/pages/page_dorothy.dart';
+import 'package:mulheres_tecnologia/pages/page_grace.dart';
+import 'package:mulheres_tecnologia/pages/page_katherine.dart';
+import 'package:mulheres_tecnologia/pages/page_margaret.dart';
 
 class HomePage extends StatefulWidget{
   const HomePage({Key? key}) : super(key: key);
@@ -27,7 +31,7 @@ class _HomePageState extends State<HomePage>{
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: const [
                           Text(
-                            'XXXXXX',
+                            'Mulheres na tecnologia',
                             style: TextStyle(
                               color: Colors.black,
                               fontSize: 24.0,
@@ -42,7 +46,7 @@ class _HomePageState extends State<HomePage>{
                         ],
                       ),
                       ),
-                      Padding(
+                    Padding(
                         padding: const EdgeInsets.only(top: 70.0, left: 30.0, right: 30.0, bottom: 20.0),
                         child: GestureDetector(
                           onTap: () {
@@ -89,14 +93,14 @@ class _HomePageState extends State<HomePage>{
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
-                                      const Text('oooo', style: TextStyle(color: Colors.black, fontSize: 20.0),
+                                      const Text('Ada Lovelace', style: TextStyle(color: Colors.black, fontSize: 20.0, fontWeight: FontWeight.w600),
                                       ),
                                       Padding(
                                         padding: const EdgeInsets.only(top: 15.0),
                                         child: Row(
                                         children: const [
                                           Icon(Icons.access_time),
-                                          Text('  5 min'),
+                                          Text('  3 min'),
                                           SizedBox(
                                             width: 80.0,
                                           ),
@@ -107,19 +111,20 @@ class _HomePageState extends State<HomePage>{
                                     ]
                                   ),
                                 )
-                                
                               ],
                             ),
                             ),
                         ),
                       ),
-                        ),
                         )
-                  ]
-                      ),
+                    ),
                       Padding(
-                        padding: const EdgeInsets.only(top: 75.0, left: 30.0, right: 30.0, bottom: 20.0),
-                        child: Card(
+                        padding: const EdgeInsets.only(top: 240.0, left: 30.0, right: 30.0, bottom: 20.0),
+                        child: GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).push(MaterialPageRoute(builder: (context)=> const GracePage(),),);
+                          },
+                          child: Card(
                           shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20.0),
                                   side: const BorderSide(color: Color.fromARGB(255, 250, 249, 250))),
@@ -160,14 +165,14 @@ class _HomePageState extends State<HomePage>{
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
-                                      const Text('oooo', style: TextStyle(color: Colors.black, fontSize: 20.0),
+                                      const Text('Grace Hopper', style: TextStyle(color: Colors.black, fontSize: 20.0, fontWeight: FontWeight.w600),
                                       ),
                                       Padding(
                                         padding: const EdgeInsets.only(top: 15.0),
                                         child: Row(
                                         children: const [
                                           Icon(Icons.access_time),
-                                          Text('  5 min'),
+                                          Text('  6 min'),
                                           SizedBox(
                                             width: 80.0,
                                           ),
@@ -178,16 +183,21 @@ class _HomePageState extends State<HomePage>{
                                     ]
                                   ),
                                 )
-                              ]
-                                ),
-                          )
-                              
+                                
+                              ],
                             ),
                             ),
                         ),
+                      ),
+                        ),
+                        ),
                         Padding(
-                        padding: const EdgeInsets.only(top: 80.0, left: 30.0, right: 30.0, bottom: 20.0),
-                        child: Card(
+                        padding: const EdgeInsets.only(top: 410.0, left: 30.0, right: 30.0, bottom: 20.0),
+                        child: GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).push(MaterialPageRoute(builder: (context)=> const DorothyPage(),),);
+                          },
+                          child: Card(
                           shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20.0),
                                   side: const BorderSide(color:Color.fromARGB(255, 250, 249, 250))),
@@ -228,14 +238,14 @@ class _HomePageState extends State<HomePage>{
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
-                                      const Text('oooo', style: TextStyle(color: Colors.black, fontSize: 20.0),
+                                      const Text('Dorothy Vaughan', style: TextStyle(color: Colors.black, fontSize: 20.0, fontWeight: FontWeight.w600),
                                       ),
                                       Padding(
                                         padding: const EdgeInsets.only(top: 15.0),
                                         child: Row(
                                         children: const [
                                           Icon(Icons.access_time),
-                                          Text('  5 min'),
+                                          Text('  3 min'),
                                           SizedBox(
                                             width: 80.0,
                                           ),
@@ -246,16 +256,20 @@ class _HomePageState extends State<HomePage>{
                                     ]
                                   ),
                                 )
-                                
                               ],
                             ),
                             ),
                         ),
                       ),
-                      ),
+                        ),
+                        ),
                       Padding(
-                        padding: const EdgeInsets.only(top: 90.0, left: 30.0, right: 30.0, bottom: 20.0),
-                        child: Card(
+                        padding: const EdgeInsets.only(top: 580.0, left: 30.0, right: 30.0, bottom: 20.0),
+                          child: GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).push(MaterialPageRoute(builder: (context)=> const KatherinePage(),),);
+                          },
+                          child: Card(
                           shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20.0),
                                   side: const BorderSide(color:Color.fromARGB(255, 250, 249, 250))),
@@ -296,7 +310,7 @@ class _HomePageState extends State<HomePage>{
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
-                                      const Text('oooo', style: TextStyle(color: Colors.black, fontSize: 20.0),
+                                      const Text('Katherine Johnson', style: TextStyle(color: Colors.black, fontSize: 20.0, fontWeight: FontWeight.w600),
                                       ),
                                       Padding(
                                         padding: const EdgeInsets.only(top: 15.0),
@@ -314,16 +328,20 @@ class _HomePageState extends State<HomePage>{
                                     ]
                                   ),
                                 )
-                                
                               ],
                             ),
                             ),
                         ),
                       ),
-                      ),
+                        ),
+                        ),
                       Padding(
-                        padding: const EdgeInsets.only(top: 110.0, left: 30.0, right: 30.0, bottom: 20.0),
-                        child: Card(
+                        padding: const EdgeInsets.only(top: 750.0, left: 30.0, right: 30.0, bottom: 40.0),
+                        child: GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).push(MaterialPageRoute(builder: (context)=> const MargaretPage(),),);
+                          },
+                          child: Card(
                           shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20.0),
                                   side: const BorderSide(color:Color.fromARGB(255, 250, 249, 250))
@@ -361,18 +379,18 @@ class _HomePageState extends State<HomePage>{
                                   ),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsets.only(left: 5.0),
+                                  padding: const EdgeInsets.only(left: 20.0),
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
-                                      const Text('oooo', style: TextStyle(color: Colors.black, fontSize: 20.0),
+                                      const Text('Margaret Hamilton', style: TextStyle(color: Colors.black, fontSize: 20.0, fontWeight: FontWeight.w600),
                                       ),
                                       Padding(
                                         padding: const EdgeInsets.only(top: 15.0),
                                         child: Row(
                                         children: const [
                                           Icon(Icons.access_time),
-                                          Text('  5 min'),
+                                          Text('  4 min'),
                                           SizedBox(
                                             width: 80.0,
                                           ),
@@ -383,18 +401,20 @@ class _HomePageState extends State<HomePage>{
                                     ]
                                   ),
                                 )
-                                
                               ],
                             ),
                             ),
                         ),
                       ),
                       ),
+                      )
               ]
                       )
-                          ),
-                        ),
-                )
-            );
+              ]
+          )
+        )
+      )
+      )
+                      );
   }
 }

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:mulheres_tecnologia/pages/home.dart';
 
-class AdaPage extends StatefulWidget{
-  const AdaPage({Key? key}) : super(key: key);
+class DorothyPage extends StatefulWidget{
+  const DorothyPage({Key? key}) : super(key: key);
 
   @override
-  _AdaPageState createState() => _AdaPageState();
+  _DorothyPageState createState() => _DorothyPageState();
 }
 
-class _AdaPageState extends State<AdaPage>{
+class _DorothyPageState extends State<DorothyPage>{
   @override
   Widget build(BuildContext context){
     return Scaffold(
@@ -38,7 +38,7 @@ class _AdaPageState extends State<AdaPage>{
                             padding: const EdgeInsets.all(20.0),
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(20.0),
-                              child: Image.asset("assets/ada_lovelace_photo.jpeg",
+                              child: Image.asset("assets/dorothy_vaughan.jpg",
                               width: 400.0,
                               height: 300.0,
                               fit: BoxFit.cover,
@@ -47,7 +47,7 @@ class _AdaPageState extends State<AdaPage>{
                           ),
                           const Padding(
                             padding: EdgeInsets.only(top: .0, left: 10.0, right: 10.0, bottom: 10.0),
-                            child: Text('Primeira programadora',
+                            child: Text('Primeira supervisora negra na história da NASA',
                             style: TextStyle(color: Color.fromARGB(255, 29, 28, 28), fontSize: 28.0, fontWeight: FontWeight.w800),
                             ),
                           ),
@@ -62,7 +62,7 @@ class _AdaPageState extends State<AdaPage>{
                           ),
                           const Padding(
                             padding: EdgeInsets.only(top: 15.0, left: 10.0, right: 10.0, bottom: 10.0),
-                            child: Text('Ada Lovelace, foi uma matemática e escritora inglesa. Hoje é reconhecida principalmente por ter escrito o primeiro algoritmo para ser processado por uma máquina, a máquina analítica de Charles Babbage.\n\nDurante o período em que esteve envolvida com o projeto de Babbage, ela desenvolveu os algoritmos que permitiriam à máquina computar os valores de funções matemáticas, além de publicar uma coleção de notas sobre a máquina analítica. Por esse trabalho é considerada a primeira programadora de toda a história.\n',
+                            child: Text('Dorothy Vaughan foi uma matemática e programadora que trabalhou durante 28 anos na NACA (agência predecessora da NASA), em uma época onde o racismo era explícito no país, Dorothy lutou pelo seu lugar, quebrando diversas barreiras e defendendo sua equipe de matemáticas negras, se tornando a primeira mulher negra supervisora da NACA. Foi uma das mais brilhantes mentes americanas na corrida espacial, foi uma das pioneiras na introdução dos computadores para cálculos de rota nos projetos da NASA.\n\nDorothy decidiu aprender SOZINHA a programar em FORTRAM os novos computadores IBM e ensinou as mulheres de seu departamento. Dessa forma, garantiu o emprego da sua equipe e supriu as necessidades da nova equipe de computação (ACD – Analisys an Computacional Division) da NASA.',
                             style: TextStyle(color: Color.fromARGB(255, 29, 29, 29),fontSize: 22.0, fontWeight: FontWeight.w400),
                             ),
                           ),
