@@ -1,16 +1,29 @@
-# mulheres_tecnologia
+# Mulheres na tecnologia ✨
 
-A new Flutter project.
+Olá, este é o meu primeiro projeto Flutter em que estou seguindo um design já pronto. 
 
-## Getting Started
+Foram utilizados durante o desenvolvimento deste projeto: Dart, Flutter e Figma.
 
-This project is a starting point for a Flutter application.
+## Sobre o projeto
 
-A few resources to get you started if this is your first Flutter project:
+O projeto é sobre um app de tranferência monetária que constitui seis pages, sendo elas:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- Login, possui dois tipos de entrada, de criar conta e de login;
+- Home, página inicial com componenetes gerais do app;
+- Send Money, página de transferência de dinheiro;
+- Add Recipient, página de adição de destinatário; 
+- Digital Wallet, página da carteira digital do usuário;
+- My Profile, página de perfil do usuário.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Passo a passo do projeto
+
+1. Criei um projeto flutter;
+2. Excluí as informações default;
+3. Criei a page Login;
+4. Criei as rotas para conetar o botão da Login com a page Add Recipient;
+5. Criei a page Add Recipient;
+6. Adicionei bottom app bar;
+7. Comecei a criar a page My Profile;
+
+- [Link do projeto:](https://www.figma.com/file/RLSSoCwRChThFXTzh2aIc2/Interwise---International-Money-Transfer-App-(Community)?node-id=0%3A1)
+
