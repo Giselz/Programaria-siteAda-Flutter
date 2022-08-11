@@ -13,6 +13,10 @@ class HomePage extends StatefulWidget{
 }
 
 class _HomePageState extends State<HomePage>{
+
+bool click = false;
+bool color = false;
+
   @override
   Widget build(BuildContext context){
     return Scaffold(
@@ -91,20 +95,32 @@ class _HomePageState extends State<HomePage>{
                                 Padding(
                                   padding: const EdgeInsets.only(left: 20.0),
                                   child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                                     children: [
                                       const Text('Ada Lovelace', style: TextStyle(color: Colors.black, fontSize: 20.0, fontWeight: FontWeight.w600),
                                       ),
                                       Padding(
                                         padding: const EdgeInsets.only(top: 15.0),
                                         child: Row(
-                                        children: const [
-                                          Icon(Icons.access_time),
-                                          Text('  3 min'),
-                                          SizedBox(
-                                            width: 80.0,
+                                        children:  [
+                                          const Icon(Icons.access_time),
+                                          const Text('  3 min'),
+                                          Padding(
+                                            padding: const EdgeInsets.only(left: 56.0),
+                                            child: IconButton(
+                                              onPressed: () {
+                                                setState(() {
+                                                  click = !click; 
+                                                  color = !color;
+                                                });
+                                              },
+                                              icon: Icon(
+                                                  (click == true) ? Icons.favorite : Icons.favorite_border,
+                                                  color: (color == true) ?  Colors.red : Colors.black87,
+                                                  size: 25.0,
+                                                ),
+                                              ),
                                           ),
-                                          Icon(Icons.favorite_border_outlined, )
                                         ],
                                         ),
                                       ),
