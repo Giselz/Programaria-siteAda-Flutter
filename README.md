@@ -26,6 +26,6 @@ O projeto constitui sete pages, sendo elas:
 5. Criei a page Home com seus Cards;
 6. Transformei os Cards em clicáveis para redirecionar a cada page específica;
 7. Transformei o Icon Arrow Back em clicável para voltar a page Home;
-
+8. Alterei o Icon Favorite do Card para IconButton para ocorrer a mudança de cor ao clicar;
 
 
